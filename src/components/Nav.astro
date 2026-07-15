@@ -1,5 +1,6 @@
 ---
 import LogoFull from "../assets/logo/logo-full.svg";
+import Icon from "./Icon.astro";
 ---
 
 <header class="sticky top-0 z-50 border-b border-paper-200 bg-paper-50/80 backdrop-blur">
@@ -15,6 +16,27 @@ import LogoFull from "../assets/logo/logo-full.svg";
       <a href="/faq" class="transition-colors hover:text-ink-900">FAQ</a>
     </nav>
 
-    <a href="/contact" class="btn-primary">Request a Demo</a>
+    <div class="flex items-center gap-2">
+      <a href="/contact" class="btn-primary">Request a Demo</a>
+
+      <details class="group relative md:hidden">
+        <summary
+          class="flex size-10 shrink-0 list-none items-center justify-center rounded-[10px] text-ink-700 [&::-webkit-details-marker]:hidden"
+          aria-label="Open menu"
+        >
+          <Icon name="menu" class="size-5 group-open:hidden" />
+          <Icon name="x" class="hidden size-5 group-open:block" />
+        </summary>
+
+        <nav
+          class="absolute top-full right-0 mt-2 flex w-48 flex-col overflow-hidden rounded-[14px] bg-paper-0 py-2 text-sm font-medium text-ink-700 shadow-[0_8px_16px_0_rgba(32,31,39,0.08),0_2px_6px_0_rgba(32,31,39,0.06),0_0_0_1px_rgba(32,31,39,0.07)]"
+        >
+          <a href="/features" class="px-4 py-2.5 transition-colors hover:bg-paper-100">Features</a>
+          <a href="/pricing" class="px-4 py-2.5 transition-colors hover:bg-paper-100">Pricing</a>
+          <a href="/about" class="px-4 py-2.5 transition-colors hover:bg-paper-100">About</a>
+          <a href="/faq" class="px-4 py-2.5 transition-colors hover:bg-paper-100">FAQ</a>
+        </nav>
+      </details>
+    </div>
   </div>
 </header>
