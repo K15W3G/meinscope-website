@@ -3,45 +3,61 @@ import LogoFull from "../assets/logo/logo-full.svg";
 import Icon from "./Icon.astro";
 ---
 
-<header class="sticky top-0 z-50 border-b border-paper-200 bg-paper-50/80 backdrop-blur">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-    <a href="/" class="flex items-center">
-      <img src={LogoFull.src} alt="Mein Scope" class="h-7 w-auto" />
-    </a>
+<header
+  class="sticky top-0 z-50 mx-auto flex w-full items-center justify-between gap-5 border-b border-paper-200 bg-paper-50/80 px-6 py-4 backdrop-blur transition-shadow md:top-6 md:mt-6 md:w-fit md:rounded-[20px] md:border-none md:bg-paper-0 md:px-4 md:py-3 md:shadow-[0_20px_20px_-10px_rgba(32,31,39,0.04),0_10px_10px_-5px_rgba(32,31,39,0.04),0_6px_6px_-3px_rgba(32,31,39,0.04),0_3px_3px_-1.5px_rgba(32,31,39,0.04),0_1px_1px_-0.5px_rgba(32,31,39,0.04),0_0_0_1px_rgba(32,31,39,0.08),inset_0_-1px_1px_-0.5px_rgba(32,31,39,0.06)]"
+>
+  <a href="/" class="flex items-center">
+    <img src={LogoFull.src} alt="Mein Scope" class="h-7 w-auto" />
+  </a>
 
-    <nav class="hidden items-center gap-8 text-sm font-medium text-ink-500 md:flex">
-      <a href="/features" class="transition-colors hover:text-ink-900">Features</a>
-      <a href="/pricing" class="transition-colors hover:text-ink-900">Pricing</a>
-      <a href="/about" class="transition-colors hover:text-ink-900">About</a>
-      <a href="/faq" class="transition-colors hover:text-ink-900">FAQ</a>
-    </nav>
+  <nav class="hidden items-center gap-1 text-sm font-medium text-ink-500 md:flex">
+    <a
+      href="/features"
+      class="rounded-[10px] px-3 py-2 transition-all duration-300 ease-out hover:bg-paper-100 hover:text-ink-950"
+      >Features</a
+    >
+    <a
+      href="/pricing"
+      class="rounded-[10px] px-3 py-2 transition-all duration-300 ease-out hover:bg-paper-100 hover:text-ink-950"
+      >Pricing</a
+    >
+    <a
+      href="/about"
+      class="rounded-[10px] px-3 py-2 transition-all duration-300 ease-out hover:bg-paper-100 hover:text-ink-950"
+      >About</a
+    >
+    <a
+      href="/faq"
+      class="rounded-[10px] px-3 py-2 transition-all duration-300 ease-out hover:bg-paper-100 hover:text-ink-950"
+      >FAQ</a
+    >
+  </nav>
 
-    <div class="flex items-center gap-2">
-      <div class="hidden md:block">
-        <a href="/contact" class="btn-primary">Request a Demo</a>
-      </div>
-
-      <details class="group relative md:hidden">
-        <summary
-          class="flex size-10 shrink-0 list-none items-center justify-center rounded-[10px] text-ink-700 [&::-webkit-details-marker]:hidden"
-          aria-label="Open menu"
-        >
-          <Icon name="menu" class="size-5 group-open:hidden" />
-          <Icon name="x" class="hidden size-5 group-open:block" />
-        </summary>
-
-        <nav
-          class="absolute top-full right-0 mt-2 flex w-56 flex-col overflow-hidden rounded-[14px] bg-paper-0 py-2 text-sm font-medium text-ink-700 shadow-[0_8px_16px_0_rgba(32,31,39,0.08),0_2px_6px_0_rgba(32,31,39,0.06),0_0_0_1px_rgba(32,31,39,0.07)]"
-        >
-          <a href="/features" class="px-4 py-2.5 transition-colors hover:bg-paper-100">Features</a>
-          <a href="/pricing" class="px-4 py-2.5 transition-colors hover:bg-paper-100">Pricing</a>
-          <a href="/about" class="px-4 py-2.5 transition-colors hover:bg-paper-100">About</a>
-          <a href="/faq" class="px-4 py-2.5 transition-colors hover:bg-paper-100">FAQ</a>
-          <div class="mt-2 border-t border-paper-200 px-3 pt-3">
-            <a href="/contact" class="btn-primary w-full justify-center">Request a Demo</a>
-          </div>
-        </nav>
-      </details>
+  <div class="flex items-center gap-2">
+    <div class="hidden md:block">
+      <a href="/contact" class="btn-primary">Request a Demo</a>
     </div>
+
+    <details class="group relative md:hidden">
+      <summary
+        class="flex size-10 shrink-0 list-none items-center justify-center rounded-[10px] text-ink-700 transition-colors duration-200 hover:bg-paper-100 [&::-webkit-details-marker]:hidden"
+        aria-label="Open menu"
+      >
+        <Icon name="menu" class="size-5 group-open:hidden" />
+        <Icon name="x" class="hidden size-5 group-open:block" />
+      </summary>
+
+      <nav
+        class="absolute top-full right-0 mt-2 flex w-56 flex-col overflow-hidden rounded-[14px] bg-paper-0 py-2 text-sm font-medium text-ink-700 shadow-[0_8px_16px_0_rgba(32,31,39,0.08),0_2px_6px_0_rgba(32,31,39,0.06),0_0_0_1px_rgba(32,31,39,0.07)]"
+      >
+        <a href="/features" class="px-4 py-2.5 transition-colors duration-200 hover:bg-paper-100">Features</a>
+        <a href="/pricing" class="px-4 py-2.5 transition-colors duration-200 hover:bg-paper-100">Pricing</a>
+        <a href="/about" class="px-4 py-2.5 transition-colors duration-200 hover:bg-paper-100">About</a>
+        <a href="/faq" class="px-4 py-2.5 transition-colors duration-200 hover:bg-paper-100">FAQ</a>
+        <div class="mt-2 border-t border-paper-200 px-3 pt-3">
+          <a href="/contact" class="btn-primary w-full justify-center">Request a Demo</a>
+        </div>
+      </nav>
+    </details>
   </div>
 </header>
