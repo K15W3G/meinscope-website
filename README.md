@@ -30,7 +30,6 @@ docs/
 
 ## Known placeholders to swap before launch
 
-- `src/pages/contact.astro` — `CONTACT_EMAIL` is a placeholder (`hello@meinscope.app`); confirm the real inbox.
 - Home page app-preview panel (`src/pages/index.astro`) is a styled placeholder; swap in a real product screenshot.
 - No self-serve pricing/signup exists yet by design — see `docs/copy/pricing.md` for why.
 
