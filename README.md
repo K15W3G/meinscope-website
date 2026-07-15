@@ -1,43 +1,44 @@
-# Astro Starter Kit: Minimal
+# Mein Scope — Marketing Website
 
-```sh
-npm create astro@latest -- --template minimal
+Marketing site for [Mein Scope](https://github.com/K15W3G/Mein-Scope), an offline-first PWA for
+endoscopy and colonoscopy patient intake, capture, and reporting. This is a separate repo from the
+clinical app itself.
+
+Built with [Astro](https://astro.build) + [Tailwind CSS v4](https://tailwindcss.com), styled with
+a design language inspired by [alignui.com](https://alignui.com) and mapped onto the Mein Scope
+brand palette.
+
+## Structure
+
+```
+src/
+├── assets/logo/     brand logo assets (icon + full wordmark)
+├── components/       Nav, Footer, Icon
+├── layouts/Layout.astro
+├── pages/            index, features, pricing, about, faq, contact
+└── styles/global.css Tailwind theme tokens + brand colors/utilities
+
+docs/
+├── BRAND-BRIEF.md    original product/brand brief
+└── copy/             page-by-page copy drafts with rationale, pre-dating the .astro build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Brand
 
-## 🚀 Project Structure
+- Primary: `#52B1E8` · CTA gradient: `#1D95DA → #52B1E8` · Wordmark accent: `#3F3D56`
+- Typeface: Inter Variable, self-hosted via `@fontsource-variable/inter` (no external font requests)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Known placeholders to swap before launch
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- `src/pages/contact.astro` — `CONTACT_EMAIL` is a placeholder (`hello@meinscope.app`); confirm the real inbox.
+- Home page app-preview panel (`src/pages/index.astro`) is a styled placeholder; swap in a real product screenshot.
+- No self-serve pricing/signup exists yet by design — see `docs/copy/pricing.md` for why.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Commands
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Command           | Action                                      |
+| :----------------- | :------------------------------------------- |
+| `npm install`       | Install dependencies                         |
+| `npm run dev`       | Start local dev server at `localhost:4321`   |
+| `npm run build`     | Build production site to `./dist/`           |
+| `npm run preview`   | Preview the production build locally         |

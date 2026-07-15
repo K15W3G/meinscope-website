@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+
+const CONTACT_EMAIL = "hello@meinscope.app"; // TODO: confirm real inbox before launch
+const subject = encodeURIComponent("Mein Scope demo request");
+const body = encodeURIComponent(
+  "Clinic / hospital name:\nCountry:\nNumber of clinicians:\nWhat are you using for intake/reporting today?\nAnything else we should know?\n"
+);
+---
+
+<Layout
+  title="Request a Demo — Mein Scope"
+  description="Tell us about your clinic and we'll set up a walkthrough of Mein Scope — including offline, if you want to see it for yourself."
+>
+  <section class="mx-auto max-w-2xl px-6 pt-20 pb-16 text-center sm:pt-28">
+    <span class="section-label">Get in touch</span>
+    <h1 class="mt-4 text-4xl font-semibold tracking-tight text-balance text-ink-950 sm:text-5xl">
+      See Mein Scope on your own device
+    </h1>
+    <p class="mx-auto mt-5 max-w-xl text-lg text-ink-500 text-balance">
+      Tell us a bit about your clinic and we'll set up a walkthrough — including offline, if you
+      want to see it for yourself.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-2xl px-6 pb-24">
+    <div class="card text-center">
+      <div class="mx-auto flex size-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-600">
+        <Icon name="arrow-right" class="size-6" />
+      </div>
+      <h2 class="mt-5 text-lg font-semibold text-ink-950">Email us to get started</h2>
+      <p class="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-ink-500">
+        We'll reply to set up a time. Include a few details so we can prep the right walkthrough
+        for your clinic:
+      </p>
+      <ul class="mx-auto mt-5 max-w-sm space-y-2 text-left text-sm text-ink-700">
+        <li class="flex gap-2"><Icon name="check-circle" class="size-4 shrink-0 text-brand-600" /> Clinic or hospital name</li>
+        <li class="flex gap-2"><Icon name="check-circle" class="size-4 shrink-0 text-brand-600" /> Country</li>
+        <li class="flex gap-2"><Icon name="check-circle" class="size-4 shrink-0 text-brand-600" /> Number of clinicians</li>
+        <li class="flex gap-2"><Icon name="check-circle" class="size-4 shrink-0 text-brand-600" /> What you use for intake/reporting today</li>
+      </ul>
+      <a href={`mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`} class="btn-primary mt-7">
+        Email {CONTACT_EMAIL}
+      </a>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+---
+
+<Layout
+  title="About — Mein Scope"
+  description="Mein Scope was built in Uganda, where unreliable connectivity is an everyday constraint, not an edge case. That shaped an offline-first, purpose-built app for endoscopy and colonoscopy."
+>
+  <section class="mx-auto max-w-3xl px-6 pt-20 pb-16 text-center sm:pt-28">
+    <span class="section-label">About</span>
+    <h1 class="mt-4 text-4xl font-semibold tracking-tight text-balance text-ink-950 sm:text-5xl">
+      Built where the internet isn't guaranteed
+    </h1>
+    <p class="mx-auto mt-5 max-w-xl text-lg text-ink-500 text-balance">
+      Mein Scope started with a simple observation: clinical software keeps assuming a connection
+      that not every clinic has.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-6 pb-24">
+    <div class="space-y-10">
+      <div>
+        <h2 class="text-xl font-semibold text-ink-950">The problem we saw</h2>
+        <p class="mt-3 leading-relaxed text-ink-500">
+          A lot of endoscopy and colonoscopy intake still runs on paper, disconnected phone
+          photos, and manually assembled reports — not because clinics don't want better tools,
+          but because the tools that exist assume constant connectivity and a general-purpose
+          workflow that doesn't match this specific procedure.
+        </p>
+        <p class="mt-3 leading-relaxed text-ink-500">
+          We built Mein Scope out of Uganda, where unreliable connectivity is an everyday planning
+          constraint, not an edge case. That constraint shaped the product from the start:
+          offline-first wasn't a feature we added later, it's the foundation everything else is
+          built on.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-ink-950">What that means in practice</h2>
+        <p class="mt-3 leading-relaxed text-ink-500">
+          Patient data lives on the device, not a server you have to reach first. The app installs
+          directly from a browser — no app store review, no IT deployment project. And instead of
+          trying to be a general EHR, Mein Scope is scoped narrowly to endoscopy and colonoscopy
+          workflows, with ENT support planned next.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-ink-950">Where we're headed</h2>
+        <p class="mt-3 leading-relaxed text-ink-500">
+          Mein Scope today runs on a single device with local storage and manual backup/restore.
+          Multi-device sync and account-based billing are on the roadmap — we're building those
+          deliberately, not rushing them ahead of getting the core clinical workflow right.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-14 text-center">
+      <a href="/contact" class="btn-primary">
+        See Where We're At
+        <Icon name="arrow-right" class="size-4" />
+      </a>
+    </div>
+  </section>
+</Layout>
