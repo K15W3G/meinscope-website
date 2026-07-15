@@ -1,10 +1,12 @@
-# Mein Scope — FAQ Page Copy (Draft 1)
+# Mein Scope: FAQ Page Copy (Final, mirrors src/pages/faq.astro)
 
-Job of this page: pre-empt the objections a technical evaluator (IT, clinic owner) will have, honestly — this is the objection-handling section from the copywriting framework, made into its own page since there's no live chat/support system yet to field these live.
+Job of this page: pre-empt the objections a technical evaluator (IT, clinic owner) will have, honestly. This is the objection-handling section from the copywriting framework, made into its own page since there's no live chat/support system yet to field these live.
 
 ---
 
 ## Header
+
+**Eyebrow:** FAQ
 
 **Headline:**
 > Questions clinics ask us
@@ -23,7 +25,7 @@ Job of this page: pre-empt the objections a technical evaluator (IT, clinic owne
 > Not yet. Mein Scope currently runs on a single device, with data stored locally on that device. Multi-device sync is on our roadmap but isn't available today.
 
 **How do we back up our data?**
-> You can manually export a full data snapshot as a file at any time, and import it to restore. Backup and restore are both manual — there's no automatic cloud backup yet.
+> You can manually export a full data snapshot as a file at any time, and import it to restore. Backup and restore are both manual, and there's no automatic cloud backup yet.
 
 **Do we need to install anything through an app store?**
 > No. Mein Scope installs directly from your browser as a Progressive Web App. There's no app store listing and no IT deployment process required.
@@ -31,20 +33,20 @@ Job of this page: pre-empt the objections a technical evaluator (IT, clinic owne
 **What video format does the app record in?**
 > Video recording currently saves in WebM format. MP4 export is planned but not available in the current build.
 
-**Who can see what — is there role-based access?**
+**Who can see what? Is there role-based access?**
 > Yes. Admins and clinicians have separate permissions. Admin-only functions include user management and access to the audit log.
 
 **Is there an audit trail?**
 > Yes. Mein Scope logs logins, record edits, and backups, so admins can see who did what and when.
 
 **Does Mein Scope support ENT procedures?**
-> Not yet — Mein Scope is built for endoscopy and colonoscopy today, with ENT support planned.
+> Not yet. Mein Scope is built for endoscopy and colonoscopy today, with ENT support planned.
 
 **How much does it cost?**
-> We don't have published pricing yet — we quote based on each clinic's setup. See our [Pricing](#) page or request a demo to talk through it.
+> We don't have published pricing yet. We quote based on each clinic's setup. See our [Pricing](#) page or request a demo to talk through it.
 
 **Is there live chat or support if we run into an issue?**
-> Not yet — reach out directly and we'll get back to you. A dedicated support channel is planned.
+> Not yet. Reach out directly and we'll get back to you. A dedicated support channel is planned.
 
 ---
 
@@ -54,4 +56,4 @@ Job of this page: pre-empt the objections a technical evaluator (IT, clinic owne
 
 **CTA:** `Request a Demo`
 
-*Annotation:* Every "not yet" answer states the current limitation plainly and, where true, notes it's on the roadmap — this is the page most likely to be read closely by a skeptical technical buyer, so hedging or vague answers would cost more credibility than the honest gaps do.
+*Annotation:* Every "not yet" answer states the current limitation plainly and, where true, notes it's on the roadmap. This is the page most likely to be read closely by a skeptical technical buyer, so hedging or vague answers would cost more credibility than the honest gaps do.
