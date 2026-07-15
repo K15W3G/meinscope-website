@@ -56,13 +56,13 @@ const faqs = [
 >
   <section class="mx-auto max-w-2xl px-6 pt-20 pb-12 text-center sm:pt-28">
     <span class="section-label">FAQ</span>
-    <h1 class="mt-4 text-4xl font-semibold tracking-tight text-balance text-ink-950 sm:text-5xl">
+    <h1 class="mt-4 text-4xl font-heading tracking-[-0.03em] text-balance text-ink-950 sm:text-5xl">
       Questions clinics ask us
     </h1>
   </section>
 
   <section class="mx-auto max-w-3xl px-6 pb-24">
-    <div class="divide-y divide-paper-200 rounded-2xl border border-paper-200 bg-paper-0">
+    <div class="card divide-y divide-paper-200 !p-0">
       {
         faqs.map((f) => (
           <details class="group px-6 py-5">
@@ -81,7 +81,7 @@ const faqs = [
     </div>
 
     <div class="mt-14 text-center">
-      <h2 class="text-2xl font-semibold text-ink-950">Still have questions?</h2>
+      <h2 class="text-2xl font-heading tracking-[-0.015em] text-ink-950">Still have questions?</h2>
       <a href="/contact" class="btn-primary mt-6">
         Request a Demo
         <Icon name="arrow-right" class="size-4" />
